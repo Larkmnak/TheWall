@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+       <title>The Great Number Game!</title>
+    </head>
+    <body>
+      <h1>Welcome to the Great Number Game!</h1>
+      <h3>I am thinking of a number between 1 and 100</h3>
+      <h3>                 Take a guess              </h3>
+      <p>number : {{ number }}</p>
+      <p>{{ message }}</p>
+      <form action = '/guessed' method='post'>
+        <input type="text" name="text">
+        <button type="submit">Guess</button>
+      </form>
+    </body>
+</html>

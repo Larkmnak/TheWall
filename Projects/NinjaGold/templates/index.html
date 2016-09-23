@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <!-- <link rel="stylesheet" type="text/css" href="JQAssignment.css"> -->
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+       <title>The Ninja Gold Game!</title>
+    </head>
+    <body>
+      <p>Your Gold: {{ gold }}</p>
+        <div class="row">
+          <form action = '/process_money' method='post'>
+            <div class="col-md-2"></div>
+            <div class="col-md-2">
+              <h3>Farm</h3>
+              <p>earns 10-20 gold</p>
+              <input type="hidden" name="building" value="farm">
+              <input type="submit" name="gold" value="Find Gold!">
+            </div>
+          </form>
+          <form action = '/process_money' method='post'>
+            <div class="col-md-2">
+              <h3>Cave</h3>
+              <p>earns 5-10 gold</p>
+              <input type="hidden" name="building" value="cave">
+              <input type="submit" name="Cave" value="Find Gold!">
+            </div>
+          </form>
+          <form action = '/process_money' method='post'>
+            <div class="col-md-2">
+              <h3>House</h3>
+              <p>earns 2-5 gold</p>
+              <input type="hidden" name="building" value="house">
+              <input type="submit" name="farm" value="Find Gold!">
+            </div>
+          </form>
+          <form action = '/process_money' method='post'>
+            <div class="col-md-2">
+              <h3>Casino</h3>
+              <p>gain/lose 0-50 gold</p>
+              <input type="hidden" name="building" value="casino">
+              <input type="submit" name="farm" value="Find Gold!">
+            </div>
+          </form>          
+          <div class="col-md-12" style="overflow:scroll" hight= 300px>
+          <p>Activities</p>
+            <p>{{ info }}</p>
+          </div>
+      </div>
+    </body>
+</html>

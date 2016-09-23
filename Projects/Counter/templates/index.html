@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+       <title>Form Test Index</title>
+    </head>
+    <body>
+      <h1>Count</h1>
+      <h3>{{session['count']}}</h3>
+      <form action = '/ninja' method='POST'>
+        <input type="submit" name="ninjab" value="For Ninjas!">
+      </form>
+      <p></p>
+      <form action = '/hacker'>
+        <input type="submit" name="hackerb" value="For Hackers!">
+      </form>
+    </body>
+</html>
